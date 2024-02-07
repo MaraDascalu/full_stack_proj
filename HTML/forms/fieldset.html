@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fieldset</title>
+  </head>
+  <body>
+    <h1>Fieldset</h1>
+    <hr />
+
+    <!-- ! Fieldset -->
+    <fieldset>
+      <legend>Select favourite color:</legend>
+      <label>Red</label>
+      <input type="radio" />
+      <label>Yellow</label>
+      <input type="radio" />
+      <label>Blue</label>
+      <input type="radio" />
+    </fieldset>
+    <br />
+
+    <!-- Options Group -->
+    <fieldset>
+      <label>Select your favourite</label>
+      <select>
+        <!-- * favourite color -->
+        <optgroup label="Color">
+          <option>Red</option>
+          <option>Yellow</option>
+          <option>Blue</option>
+        </optgroup>
+        <!-- * favourite programming language -->
+        <optgroup label="Programming language">
+          <option>JavaScript</option>
+          <option>Java</option>
+          <option>C++</option>
+          <option>Rust</option>
+        </optgroup>
+      </select>
+    </fieldset>
+  </body>
+</html>
