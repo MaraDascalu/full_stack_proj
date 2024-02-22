@@ -1,0 +1,14 @@
+Assignment Instructions:
+
+1. Set up a Node.js project.
+2. Integrate MongoDB Atlas as the database.
+3. Implement two routes: one for adding data to the database and another for retrieving data.
+4. Ensure proper error handling and database connection management.
+5.Write clean, well-documented code.
+
+Questions for this assignment:
+
+1. Write the code to establish a connection between your Node.js application and MongoDB Atlas. Include error handling for failed connections.
+2. Create a route in your Node.js application that allows users to add data to a MongoDB collection. Ensure your code handles any potential errors during the data insertion process.
+3.Implement a route in your Node.js application for retrieving data from a specific MongoDB collection. Your code should handle scenarios where the requested data is not found.
+4.Enhance your application with a feature that allows updating existing data in the MongoDB database. Write a route that handles data updates and includes proper error checking and response handling.
