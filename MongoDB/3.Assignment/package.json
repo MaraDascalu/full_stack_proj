@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node --env-file=.env server.js",
-    "server": "nodemon server.jjs"
+    "server": "nodemon server.js"
   },
   "author": "Mara Dascalu",
   "license": "ISC",
