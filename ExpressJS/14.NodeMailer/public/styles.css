@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.title {
+  text-align: center;
+  padding: 5px;
+  color: #4e4e4e;
+}
+
+.description {
+  padding: 10px;
+  font-style: italic;
+  font-size: large;
+}
+
+#email {
+  padding: 5px;
+  display: block;
+  height: 10vh;
+}
+
+#message {
+  margin-top: 10px;
+  width: 80vh;
+}
+
+#submit-button {
+  margin-left: 110px;
+  height: 30px;
+  width: 80px;
+}
