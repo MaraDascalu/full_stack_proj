@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/42a182743f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/form.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Update Comment</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <%-include("../partials/navbar.ejs") %>
+    <div class="form-container">
+      <!-- icon -->
+      <h1>
+        Update Comment
+
+        <!-- add icon -->
+        <i class="fas fa-plus"></i>
+      </h1>
+
+      <% if (error) { %>
+      <small class="error">
+        <i class="fas fa-exclamation-circle"></i>
+        <%=error %>
+      </small>
+      <% } %>
+
+      <form
+        action="/api/v1/comments/<%=comment._id %>?_method=PUT&postId=<%=post._id %>"
+        method="POST"
+      >
+        <div class="input-wrapper">
+          <!-- Comment Message -->
+          <label for="body">Comment Message</label>
+          <textarea name="message" id="body" cols="30" rows="10">
+<%=comment.message %></textarea
+          >
+          <!-- err -->
+        </div>
+
+        <button type="submit">Update</button>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <%-include("../partials/footer.ejs") %>
+  </body>
+</html>
