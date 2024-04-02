@@ -69,7 +69,10 @@ const loginUser = async (req, res, next) => {
 const userProfile = async (req, res, next) => {
   try {
     const userId = req.user;
-    const userFound = await User.findById(userId);
+    const userFound = await User.findById(userId).populate({
+      path: "accounts",
+      populate: { path: "transactions" },
+    });
 
     if (!userFound) {
       return next(new Error("Invalid user id!"));

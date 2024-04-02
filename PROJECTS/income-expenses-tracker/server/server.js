@@ -1,3 +1,4 @@
+import cors from "cors";
 import express from "express";
 import userRoute from "./routes/user.js";
 import accountRoute from "./routes/account.js";
@@ -13,6 +14,7 @@ connectDB();
 
 // ! Middlewares
 app.use(express.json());
+app.use(cors());
 
 // ! Routes
 app.use("/api/v1/users/", userRoute);
